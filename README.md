@@ -1,5 +1,7 @@
 # README
 
+[ ![Codeship Status for dschmura/dschmura_website](https://app.codeship.com/projects/e3851ff0-e7f6-0134-f3ac-061ac26d127f/status?branch=master)](https://app.codeship.com/projects/207296)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
