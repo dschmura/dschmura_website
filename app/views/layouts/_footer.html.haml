@@ -1,7 +1,24 @@
-
+/ Footer
 %footer
-  %nav
-    %ul
-      %li
-      %li
-      %li
+  .container
+    .row
+      .col-md-4
+        %span.copyright Copyright &#169; Your Website 2017
+      .col-md-4
+        %ul.list-inline.social-buttons
+          %li.list-inline-item
+            %a{:href => "https://twitter.com/humbledaisy", target: :blank}
+              %i.fa.fa-twitter
+
+
+          %li.list-inline-item
+            %a{:href => "http://lnkd.in/VuU9xY"}
+              %i.fa.fa-linkedin
+          %li.list-inline-item
+            = mail_to("dschmura@humbledaisy.com", "", subject: "ManonaM", encode: :javascript, class: "fa fa-envelope fa-3x wow bounceIn connect_icons", "data-original-title" => "Send me an email, if you must.", rel: :tooltip, "data-placement" => :bottom)
+      .col-md-4
+        %ul.list-inline.quicklinks
+          %li.list-inline-item
+            = link_to "Privacy Policy", pages_privacy_path
+          %li.list-inline-item
+            %a{:href => "#"} Terms of Use

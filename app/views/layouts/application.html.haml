@@ -6,8 +6,22 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body{:class => controller.controller_name}
+    / Temporary navbar container fix until Bootstrap 4 is patched
+    :css
+      .navbar-toggler {
+          z-index: 1;
+      }
+
+      @media (max-width: 576px) {
+          nav > .container {
+              width: 100%;
+          }
+      }
+
+  %body#page-top{:class => controller.controller_name}
     = render 'layouts/header'
     .content#content
     = yield
     = render 'layouts/footer'
+    / Plugin JavaScript
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"}

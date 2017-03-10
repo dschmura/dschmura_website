@@ -1,10 +1,20 @@
 %header
-  %nav.navbar.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse
-    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "headerNavBar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#headerNavBar", "data-toggle" => "collapse", :type => "button"}
-      %span.navbar-toggler-icon
-    = link_to site_name, root_path, class:"navbar-brand"
-    #headerNavBar.collapse.navbar-collapse
-      %ul.navbar-nav.ml-auto
-        %li.nav-item= link_to "About", pages_about_path, class:"nav-link"
-        %li.nav-item= link_to "Contact Us", pages_contact_path, class:"nav-link"
-        %li.nav-item= link_to "Privacy", pages_privacy_path, class:"nav-link"
+  / Navigation
+  %nav#mainNav.navbar.fixed-top.navbar-toggleable-md.navbar-inverse.fixed-top.bg-inverse
+    .container
+      %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+        Menu
+        %i.fa.fa-bars
+      = link_to site_name, root_path, class: 'navbar-brand', id: root_path(anchor: 'page-top')
+      #navbarResponsive.collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto
+          %li.nav-item= link_to 'Skills', root_path(anchor: 'skills'), class: 'nav-link page-scroll'
+          -# %li.nav-item= link_to 'Services', root_path(anchor: 'services'), class: 'nav-link page-scroll'
+          %li.nav-item= link_to 'Portfolio', root_path(anchor: 'portfolio'), class: 'nav-link page-scroll'
+          %li.nav-item= link_to 'About Local', root_path(anchor: 'about'), class: 'nav-link page-scroll'
+          %li.nav-item= link_to 'Team', root_path(anchor: 'team'), class: 'nav-link page-scroll'
+          %li.nav-item= link_to 'Contact Local', root_path(anchor: 'contact'), class: 'nav-link page-scroll'
+          |
+          %li.nav-item= link_to "About", pages_about_path, class:"nav-link"
+          %li.nav-item= link_to "Contact Us", pages_contact_path, class:"nav-link"
+          %li.nav-item= link_to "Privacy", pages_privacy_path, class:"nav-link"

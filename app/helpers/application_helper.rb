@@ -1,6 +1,6 @@
 module ApplicationHelper
   def site_name
-    @site_name = nil
+    @site_name = "Dave Chmura"
     @site_name = @site_name || Rails.application.class.parent_name.titleize
   end
 

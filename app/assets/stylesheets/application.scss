@@ -2,7 +2,7 @@
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's 
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
  * vendor/assets/stylesheets directory can be referenced here using a relative path.
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
@@ -10,15 +10,56 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- 
+
  *= require_self
  */
 @charset 'utf-8';
-    
+
 @import 'normalize-rails';
-    
 @import 'font-awesome';
 @import 'bourbon';
-   
+
 @import 'neat';  // Custom bootstrap variables must be set or imported before bootstrap itself.
+
+@import 'agency';
+@import '_variables';
+@import '_mixins';
+
+@import 'resume';
 @import "bootstrap";
+
+.intro_text{
+  font-size: 1.5em;
+  // @include span-columns(11);
+}
+
+.skills {
+
+  .skill-item {
+
+
+    padding: 3em 0 2em;
+    text-align: center;
+
+    h4 {
+      text-transform: uppercase;
+      font-size: 1.3em;
+      padding-bottom: .5em;
+    }
+
+    p {
+      color: darken(white, 50%);
+    }
+
+    i {
+      font-size: 4em;
+      color: darken(white, 20%);
+      margin-bottom: .3em;
+      transition: color .2s;
+    }
+
+    &:hover i {
+      color: $highlight;
+    }
+  }
+}

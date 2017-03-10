@@ -1,0 +1,143 @@
+// Place all the styles related to the resume controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@mixin rounded-corners($radius: 10px)
+  border-radius: $radius
+  -moz-border-radius: $radius
+  -webkit-border-radius: $radius
+
+@mixin transparent($transparency: 0.5, $trans: 50)
+  zoom: 1
+  filter: alpha(opacity=$trans)
+  opacity: $transparency
+
+.resume
+  // @include outer-container(100%)
+  %ul
+    %li
+      list-style-type: circle
+.job
+  font-size: 110%
+  line-height: 1em
+  // @include margin( 1em null null null)
+
+.date
+
+  font-style: oblique
+  font-weight: bold
+
+.location
+  font-style: oblique
+  font-weight: bold
+  float: right
+  margin-right: 1em
+
+.experience
+  // @include row()
+  position: relative
+  left: 3%
+  li
+    line-height: 1.3em
+    clear: left
+    list-style-type: circle
+
+.resume_sidebar
+  @include span-columns(3)
+
+  margin-top: 1em
+  .experience_sidebar
+    @include rounded-corners(15px)
+    // @include padding( 1em 1em 1em 1em)
+    // @include margin( null null 1em null)
+    background: #607B9B
+    height: 100%
+    min-height: auto
+    li
+      color: white
+      font-weight: bold
+
+
+  .a_bit_about_me_sidebar
+    background-color: #79A092
+    @include rounded-corners(15px)
+
+    // @include padding( 1em 1em 1em 1em)
+    // @include margin( null null 1em null)
+  .education_sidebar
+    @include rounded-corners(15px)
+
+    // @include padding( 1em 1em null 1em)
+    background-color: #607B9B
+.field_circle
+  float: right
+
+#portfolio_tags
+  a
+    color: #EBAA1E
+
+#portfolio_image
+  @include rounded-corners(10px)
+  width:  150px
+
+
+.resume_header
+
+  height: 300px
+  background-color:  #EBAA1E
+  background-image: url('resume_header.jpg')
+  background-position: right
+  background-size: 100% 107%
+  background-repeat: no-repeat
+
+  .resume_contact
+    @include span-columns(3)
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif
+    font-weight: 700
+    position: absolute
+    // @include transparent(0.85, 85)
+    width: 300px
+    height: 300px
+    border-bottom: 19px solid #fff
+    transform: rotate(-90deg)
+    -webkit-transform: rotate(-90deg)
+    -moz-transform: rotate(-90deg)
+    background-color:  #EBAA1E
+
+
+.resume_name
+  h2
+    color: #FFFFFF
+    position: relative
+    top: 10px
+    right: 4px
+    font-size: 2.1em
+
+.resume_phone
+  h3
+    position: relative
+    bottom: 5px
+    left: 6px
+    font-size: 2em
+    font-style: bold
+    color: #FFFFFF
+
+.resume_email
+  position: relative
+  left: 6px
+  font-size: 14px
+  font-style: bold
+  color: #FFFFFF
+
+.connect_icons
+  color: #FFF
+  &:hover
+    color: #F5BB1C
+    text-decoration: none
+
+.experience_section
+  // @include outer-container
+  @include span-columns(8)
+  // @include margin(1em 2em null 2em)
+  margin: 2em
