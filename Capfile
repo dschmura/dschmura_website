@@ -15,6 +15,16 @@ require "capistrano/deploy"
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
+require 'capistrano/rbenv'
+set :rbenv_ruby, '2.4.0'
+
+require 'capistrano/rails'
+# require 'capistrano/unicorn'
+require 'capistrano/unicorn_nginx'
+# require 'capistrano/chruby'
+require 'capistrano/bundler'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
