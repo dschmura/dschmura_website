@@ -19,15 +19,16 @@
 @import 'font-awesome';
 @import 'bourbon';
 
-@import 'neat';  // Custom bootstrap variables must be set or imported before bootstrap itself.
+@import 'neat';
 
 @import 'agency';
 @import '_variables';
 @import '_mixins';
-@import "bootstrap";
 
-@import 'resume';
+// Custom bootstrap variables must be set or imported before bootstrap itself.
+@import 'bootstrap';
 @import 'ribbons';
+@import 'resume';
 
 .intro_text{
   font-size: 1.5em;

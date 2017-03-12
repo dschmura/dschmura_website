@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'bootstrap'
 
 @mixin rounded-corners($radius: 10px)
   border-radius: $radius
@@ -44,7 +45,7 @@
     list-style-type: circle
 
 .resume_sidebar
-  @include span-columns(3)
+  @include make-col(3)
 
   margin-top: 1em
   .experience_sidebar
@@ -92,7 +93,7 @@
   background-repeat: no-repeat
 
   .resume_contact
-    @include span-columns(3)
+    @include make-col(3)
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif
     font-weight: 700
     position: absolute
@@ -138,6 +139,6 @@
 
 .experience_section
   // @include outer-container
-  @include span-columns(8)
+  @include make-col(8)
   // @include margin(1em 2em null 2em)
   margin: 2em
