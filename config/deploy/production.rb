@@ -1,4 +1,4 @@
-server "198.199.92.58", user: 'deployer', roles: %w{app db web}
+server "104.131.53.113", user: 'deployer', roles: %w{app db web}
 set :stage, :production
 set :deploy_user, "deployer"
 set :full_app_name, "dschmura_website"
