@@ -11,25 +11,25 @@
           .portfolio-hover
             .portfolio-hover-content
               %i.fa.fa-plus.fa-3x
-          %img.img-fluid{:alt => "", :src => "img/portfolio/01-thumbnail.jpg"}/
+          = image_tag('projects/mClassrooms_index.png', class: 'img-fluid ', alt: 'Mi-Locations web site')
         .portfolio-caption
-          %h4 MClassrooms / MiLocation
+          %h4 MClassrooms / MiLocations
           %p.text-muted Illustration
       .col-md-4.col-sm-6.portfolio-item
         %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
           .portfolio-hover
             .portfolio-hover-content
               %i.fa.fa-plus.fa-3x
-          %img.img-fluid{:alt => "", :src => "img/portfolio/02-thumbnail.jpg"}/
+          = image_tag('projects/SonicPicsCascadingPhotos.png', class: 'img-fluid ', alt: 'SonicPics - Digital Storytelling App')
         .portfolio-caption
           %h4 SonicPics
-          %p.text-muted Graphic Design
+          %p.text-muted Mobile Product Design
       .col-md-4.col-sm-6.portfolio-item
         %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
           .portfolio-hover
             .portfolio-hover-content
               %i.fa.fa-plus.fa-3x
-          %img.img-fluid{:alt => "", :src => "img/portfolio/03-thumbnail.jpg"}/
+          = image_tag('projects/ProfCast_Logo.png', class: 'img-fluid ', alt: 'ProfCast Lecture Capture App')
         .portfolio-caption
           %h4 ProfCast
           %p.text-muted Identity
@@ -60,6 +60,8 @@
         .portfolio-caption
           %h4 Connection Project
           %p.text-muted Photography
-      .row
-        %button
-          =link_to "Resume", resume_path
+
+    %button.btn.btn-outline-primary.btn-lg.btn-block
+      =link_to "Resume", resume_path
+
+
