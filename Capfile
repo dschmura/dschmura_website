@@ -21,15 +21,19 @@ install_plugin Capistrano::SCM::Git
 require 'capistrano/rbenv'
 
 require 'capistrano/rails'
-require 'capistrano/passenger'
+# require 'capistrano/passenger'
 # require 'capistrano/unicorn'
-# require 'capistrano/unicorn_nginx'
+#require 'capistrano/unicorn_nginx'
 
 
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
 require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
+require 'capistrano/nginx'
+require 'capistrano/puma'
+require 'capistrano/puma/nginx'
+require 'capistrano/upload-config'
 # Include tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
@@ -51,3 +55,10 @@ require 'capistrano/rails/migrations'
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
+
+
+
+
+
+
+
