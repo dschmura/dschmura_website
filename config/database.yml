@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: dschmura_website_production
-  username: dschmura_website
+  username: deployer
   password: <%= ENV['DSCHMURA_WEBSITE_DATABASE_PASSWORD'] %>
