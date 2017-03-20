@@ -74,10 +74,10 @@ end
 
 group :development do
   gem 'capistrano-rails'
-  gem 'capistrano-passenger'
+  # gem 'capistrano-passenger'
   # gem 'capistrano-postgresql', '~> 4.2.0'
   gem 'capistrano-bundler'
-  # gem 'capistrano-unicorn-nginx'
+  gem 'capistrano-unicorn-nginx'
   gem 'capistrano-rake', require: false
   gem 'capistrano-rbenv', "~> 2.1"
   gem 'erb2haml'
