@@ -73,24 +73,17 @@ group :test do
 end
 
 group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rbenv', "~> 2.1"
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
   gem 'capistrano-rails'
-  # gem 'capistrano-passenger'
-  # gem 'capistrano-postgresql', '~> 4.2.0'
-  gem 'capistrano-bundler'
-  # gem 'capistrano-unicorn-nginx'
-  gem 'capistrano3-puma'
   gem 'capistrano3-nginx'
   gem 'capistrano-rake', require: false
-  gem 'capistrano-rbenv', "~> 2.1"
   gem 'erb2haml'
   gem 'pry'
   gem 'pry-rails'
-end
-
-# Use Unicorn as the app server
-# gem 'unicorn'
-group :production do
-  gem 'unicorn'
 end
 
 gem 'guard-rails', group: :development
