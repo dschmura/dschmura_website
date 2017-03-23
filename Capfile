@@ -1,10 +1,9 @@
 set :rbenv_type, :user
-set :rbenv_ruby, '2.4.0'
+set :rbenv_ruby, '2.4.1'
 
 # Load DSL and Setup Up Stages
 require 'capistrano/setup'
 require 'capistrano/deploy'
-
 require 'capistrano/rails'
 require 'capistrano/bundler'
 require 'capistrano/rbenv'
