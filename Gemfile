@@ -73,13 +73,10 @@ group :test do
 end
 
 group :development do
-  gem 'capistrano',         require: false
-  gem 'capistrano-rbenv', "~> 2.1"
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
   gem 'capistrano-rails'
-  gem 'capistrano3-nginx'
+  gem 'capistrano-postgresql', '~> 4.2.0'
+  gem 'capistrano-rvm'
+  gem 'capistrano-passenger'
   gem 'capistrano-rake', require: false
   gem 'erb2haml'
   gem 'pry'
