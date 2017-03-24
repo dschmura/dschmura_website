@@ -26,7 +26,7 @@ set :puma_init_active_record, false  # Change to true if using ActiveRecord
 set :ssh_options,     { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/id_rsa.pub) }
 
 append :linked_files,  "config/secrets.yml.key"
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "vendor/bundle", "public/system", "public/uploads"
 
 ## Defaults:
 # set :scm,           :git
