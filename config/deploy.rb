@@ -74,6 +74,7 @@ desc 'Upload to shared/config'
   on roles (:app) do
     upload! "config/secrets.yml.key",  "#{shared_path}/config/secrets.yml.key"
     upload! "config/puma.rb.sample",  "#{shared_path}/config/puma.rb"
+    upload! "config/nginx.conf",  "#{shared_path}/config/nginx.conf"
   end
 end
 
@@ -99,5 +100,5 @@ end
 # kill -s SIGTERM pid   # Stop puma
 ## Linked Files & Directories (Default None):
 
-set :linked_files, %w{config/secrets.yml.key}
+set :linked_files, %w{config/secrets.yml.key config/puma.rb}
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
