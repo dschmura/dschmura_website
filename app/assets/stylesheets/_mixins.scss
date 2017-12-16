@@ -82,3 +82,8 @@
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
+@mixin transparent($transparency: 0.5, $trans: 50) {
+  zoom: 1;
+  filter: alpha(opacity=$trans);
+  opacity: $transparency;
+}
