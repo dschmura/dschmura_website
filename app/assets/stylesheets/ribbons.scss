@@ -14,6 +14,7 @@
   color: #f0f0f0;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  z-index: 20000;
 }
 
 /* Custom styles */
@@ -29,7 +30,7 @@
 /* Different positions */
 
 .corner-ribbon.top-left{
-  top: 105px;
+  top: 45px;
   left: -80px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
