@@ -13,11 +13,11 @@ body {
   color: $theme-primary !important;
 }
 p {
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.75;
 }
 p.large {
-  font-size: 16px;
+  font-size: 1.2rem;
 }
 a, a:hover, a:focus, a:active, a.active {
   outline: none;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   @include heading-font;
   font-weight: 700;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 1.8rem;
   padding: 20px 40px;
 }
 // Custom Navigation Bar
@@ -153,9 +153,11 @@ header {
   .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
+    color: #2a5278;
 
     .intro-lead-in {
       @include serif-font;
+      @include transparent(0.7, 7);
       font-style: italic;
       font-size: 22px;
       line-height: 22px;
@@ -163,6 +165,7 @@ header {
     }
     .intro-heading {
       @include heading-font;
+      @include transparent(0.8, 8);
       font-weight: 700;
       font-size: 50px;
       line-height: 50px;
@@ -199,7 +202,7 @@ section {
   padding: 100px 0;
 
   h2.section-heading {
-    font-size: 40px;
+    font-size: 3rem;
     margin-top: 0;
     margin-bottom: 15px;
   }
