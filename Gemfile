@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.2'
+gem 'rails', '~> 5.1.4'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
@@ -92,7 +92,7 @@ gem 'bourbon'
 gem 'neat', '~> 1.8'
 
 gem 'bitters'
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.0.0.beta2.1'
 # Bootstrap Tooltips and popovers depend on tether for positioning. If you use them, add tether to the Gemfile:
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
