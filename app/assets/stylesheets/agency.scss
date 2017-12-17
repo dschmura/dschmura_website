@@ -151,8 +151,8 @@ header {
   color: white;
 
   .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
+    margin: 3rem;
+    padding: 5rem;
     color: #2a5278;
 
     .intro-lead-in {
@@ -161,7 +161,7 @@ header {
       font-style: italic;
       font-size: 22px;
       line-height: 22px;
-      margin-bottom: 25px;
+
     }
     .intro-heading {
       @include heading-font;
@@ -491,9 +491,7 @@ section {
   }
 }
 // Skills Section
-.skill-item {
-  padding: 1em
-}
+
 // END Skills Section
 // Team Section
 
