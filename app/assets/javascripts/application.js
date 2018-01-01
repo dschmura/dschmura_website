@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require jquery2
-//= require tether
+//= require popper
 //= require jquery_easing
 //= require bootstrap
 //= require rails-ujs
