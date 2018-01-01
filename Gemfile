@@ -64,6 +64,7 @@ group :development, :test do
   gem 'rspec-rails', '~>3.5.0'
   gem 'factory_girl_rails'
   gem 'annotate', '~> 2.7'
+  gem 'letter_opener'
 end
 
 group :test do
