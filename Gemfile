@@ -92,8 +92,6 @@ gem 'bourbon'
 gem 'neat', '~> 1.8'
 
 gem 'bitters'
-gem 'bootstrap', '~> 4.0.0.beta2.1'
-# Bootstrap Tooltips and popovers depend on tether for positioning. If you use them, add tether to the Gemfile:
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+gem 'bootstrap', '~> 4.0.0.beta3'
+# Bootstrap Tooltips and popovers depend on popper for positioning. If you use them, add tether to the Gemfile:
+gem 'popper_js'
