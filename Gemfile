@@ -62,7 +62,7 @@ gem 'normalize-rails'
 gem 'font-awesome-rails'
 group :development, :test do
   gem 'rspec-rails', '~>3.5.0'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'annotate', '~> 2.7'
   gem 'letter_opener'
 end
