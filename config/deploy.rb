@@ -73,6 +73,7 @@ end
 desc 'Upload to shared/config'
   task :upload do
   on roles (:app) do
+    upload! "config/master.key",  "#{shared_path}/config/master.key"
     upload! "config/secrets.yml.key",  "#{shared_path}/config/secrets.yml.key"
     upload! "config/puma.rb.sample",  "#{shared_path}/config/puma.rb"
     upload! "config/nginx.conf",  "#{shared_path}/config/nginx.conf"
