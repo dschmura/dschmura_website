@@ -1,5 +1,19 @@
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+  config.require_master_key = true
+  config.action_mailer.delivery_method = :smtp
+
+  config.action_mailer.smtp_settings = {
+
+    address:              Rails.application.secrets.DSCHMURA_WEBSITE_EMAIL_SERVER,
+    domain:               Rails.application.secrets.DSCHMURA_WEBSITE_EMAIL_DOMAIN,
+    user_name:            Rails.application.secrets.DSCHMURA_WEBSITE_EMAIL_USERNAME,
+    password:             Rails.application.secrets.DSCHMURA_WEBSITE_EMAIL_PASSWORD,
+    authentication:       :login,
+    enable_starttls_auto: 'true',
+    port:                 '587'
+  }
+
+    # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
   config.cache_classes = true
