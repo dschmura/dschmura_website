@@ -102,5 +102,5 @@ end
 # kill -s SIGTERM pid   # Stop puma
 ## Linked Files & Directories (Default None):
 
-set :linked_files, %w{config/secrets.yml.key config/puma.rb}
+set :linked_files, %w{config/secrets.yml.key config/puma.rb config/master.key}
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
