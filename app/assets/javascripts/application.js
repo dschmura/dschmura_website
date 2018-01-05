@@ -17,6 +17,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require agency.min
+//= require fontawesome-all.min
 
 
 
