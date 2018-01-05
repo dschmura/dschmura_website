@@ -1,5 +1,6 @@
 Rails.application.configure do
   config.require_master_key = true
+  config.read_encrypted_secrets = true
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
