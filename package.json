@@ -2,7 +2,7 @@
   "name": "dschmura_website",
   "private": true,
   "dependencies": {
-    "@rails/webpacker": "^3.2.0",
+    "@rails/webpacker": "^3.2.1",
     "bootstrap": "^4.0.0",
     "coffeescript": "1.12.7",
     "font-awesome": "^4.7.0",

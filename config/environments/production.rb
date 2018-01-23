@@ -1,5 +1,5 @@
 Rails.application.configure do
-  # Verifies that versions and hashed value of the package contents in the project's package.json
+   config.webpacker.check_yarn_integrity = false  # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = false
   config.require_master_key = true
   config.read_encrypted_secrets = true
