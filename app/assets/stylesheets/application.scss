@@ -13,56 +13,19 @@
 
  *= require_self
  */
-@charset 'utf-8';
+// @charset 'utf-8';
 
-@import 'normalize-rails';
-@import 'font-awesome';
-@import 'bourbon';
+// @import 'normalize-rails';
+// @import 'font-awesome';
+// @import 'bourbon';
 
-@import 'neat';
+// @import 'neat';
 
-@import 'agency';
-@import '_variables';
-@import '_mixins';
+// @import 'agency';
+// @import '_variables';
+// @import '_mixins';
 
-// Custom bootstrap variables must be set or imported before bootstrap itself.
-@import 'bootstrap';
-@import 'ribbons';
-@import 'resume';
-
-.intro_text{
-  font-size: 1.5em;
-  // @include span-columns(11);
-}
-
-.skills {
-
-  .skill-item {
-    font-size: 1.6rem;
-    font-weight: lighter;
-    padding: 1rem, 4rem, 1rem, 4rem;
-    margin: 0, 2rem, 0, 2rem;
-    text-align: center;
-
-    h4 {
-      text-transform: uppercase;
-      font-size: 1.3em;
-      padding-bottom: .5em;
-    }
-
-    p {
-      color: darken(white, 75%);
-    }
-
-    i {
-      font-size: 4em;
-      color: darken(white, 20%);
-      margin-bottom: .3em;
-      transition: color .2s;
-    }
-
-    &:hover i {
-      color: $highlight;
-    }
-  }
-}
+// // Custom bootstrap variables must be set or imported before bootstrap itself.
+// @import 'bootstrap';
+// @import 'ribbons';
+// @import 'resume';

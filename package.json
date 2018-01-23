@@ -1,5 +1,16 @@
 {
   "name": "dschmura_website",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^3.2.0",
+    "bootstrap": "^4.0.0",
+    "coffeescript": "1.12.7",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "rails-ujs": "^5.1.4",
+    "turbolinks": "^5.1.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.11.1"
+  }
 }

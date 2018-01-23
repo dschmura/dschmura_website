@@ -10,33 +10,8 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery2
-//= require popper
+
 //= require jquery_easing
-//= require bootstrap
-//= require rails-ujs
-//= require turbolinks
+
 //= require agency.min
 //= require fontawesome-all.min
-
-
-
-$(document).on("turbolinks:load", function() {
-  setActiveLink();
-});
-
-  function setActiveLink() {
-    var path = window.location.pathname;
-    path = path.replace("\/$/", "");
-    path = decodeURIComponent(path);
-    var elemental = $("header .navbar-nav li a");
-    elemental.each(function() {
-      var href = $(this).attr('href');
-      if (path.substring(0, href.length) === href) {
-          $(this).closest('a').addClass('active');
-      }
-  });
-}
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
