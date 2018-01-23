@@ -1,3 +1,4 @@
+import './agency.min'
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
