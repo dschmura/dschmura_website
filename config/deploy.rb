@@ -22,7 +22,7 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 set :nginx_sites_enabled_path, "/etc/nginx/sites-enabled"
 
-before "deploy:assets:precompile", "deploy:yarn_install"
+before "deploy:assets:precompile", "yarn"
 
 ## Defaults:
 # set :scm,           :git
@@ -54,15 +54,6 @@ namespace :deploy do
     end
   end
 end
-
-desc 'Run rails yarn:install'
- task :yarn_install do
-   on roles(:web) do
-     within deploy_to do
-       execute("cd #{deploy_to} && yarn install")
-     end
-   end
- end
 
 desc 'Initial Deploy'
   task :initial do
