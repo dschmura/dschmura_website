@@ -1,5 +1,6 @@
 Rails.application.configure do
-    config.webpacker.check_yarn_integrity = true  config.action_mailer.delivery_method = :letter_opener
+  config.webpacker.check_yarn_integrity = true
+  config.action_mailer.delivery_method = :letter_opener
   # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
 
