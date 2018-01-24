@@ -55,11 +55,11 @@ namespace :deploy do
   end
 end
 
-desc 'Run rake yarn:install'
+desc 'Run rails yarn:install'
  task :yarn_install do
    on roles(:web) do
-     within release_path do
-       execute("cd #{release_path} && yarn install")
+     within deploy_to do
+       execute("cd #{deploy_to} && yarn install")
      end
    end
  end
