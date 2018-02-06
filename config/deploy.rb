@@ -22,8 +22,6 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 set :nginx_sites_enabled_path, "/etc/nginx/sites-enabled"
 
-before "deploy:assets:precompile", "yarn"
-
 ## Defaults:
 # set :scm,           :git
 # set :branch,        :master
@@ -104,3 +102,4 @@ end
 
 set :linked_files, %w{config/secrets.yml.key config/puma.rb config/master.key}
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_dirs, fetch(:linked_dirs, []).push('public/packs', 'node_modules')
