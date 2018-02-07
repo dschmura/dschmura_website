@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0.beta2'
+gem 'rails', '~> 5.2.0.rc1'
 # Use postgresql as the database for Active Record
 # Use webpacker for asset management
 gem 'webpacker', '~> 3.0'
